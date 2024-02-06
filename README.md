@@ -35,7 +35,7 @@ The parks without names(null) were deleted using
 `DELETE FROM green_spaces
 WHERE name IS NULL;`
 
-
+The cleaned data was added into QGIS for visualization purposes
 
 ANALYSIS
 
@@ -49,6 +49,8 @@ WHERE name <> 'Washington';`
 
 
 ![image](https://github.com/isackwalube/UrbanGreenSpacesProject/assets/156945477/270b4d46-4b9e-41f4-9337-9f762d4899dd)
+
+
 
 
 
