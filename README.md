@@ -50,7 +50,7 @@ WHERE name <> 'Washington';`
 
 ![image](https://github.com/isackwalube/UrbanGreenSpacesProject/assets/156945477/270b4d46-4b9e-41f4-9337-9f762d4899dd)
 
-visually, the parks tally with the green spaces on the map.
+Visually, the parks tally with the green spaces on the map.
 
 Conclusion:
 
