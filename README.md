@@ -17,12 +17,17 @@ Open street map data downloaded from BBBike was then imported into PgAdmin using
 
 A new table (green_spaces) was then created and populated with green spaces(parks) data from the osm data downloaded.
 
-`CREATE TABLE green_spaces (
-id SERIAL PRIMARY KEY,
-name VARCHAR(255),
-location GEOMETRY(Polygon, 3857),
-area_sq_m NUMERIC
-);`
+`CREATE TABLE green_spaces (`
+
+`id SERIAL PRIMARY KEY,`
+
+`name VARCHAR(255),`
+
+`location GEOMETRY(Polygon, 3857),`
+
+`rea_sq_m NUMERIC`
+
+`);`
 
 
 `INSERT INTO green_spaces (name, location, area_sq_m)
