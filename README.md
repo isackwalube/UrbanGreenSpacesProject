@@ -35,7 +35,7 @@ The parks without names(null) were deleted using
 `DELETE FROM green_spaces
 WHERE name IS NULL;`
 
-The cleaned data was added into QGIS for visualization purposes
+The cleaned data was added to QGIS for visualization purposes.
 
 ANALYSIS
 
