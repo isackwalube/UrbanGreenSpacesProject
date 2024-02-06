@@ -1,5 +1,6 @@
 # UrbanGreenSpacesProject
 METHODOLOGY
+
 A new database(Urban_green_spaces) was created on PgAdmin.
 
 A repository was created(UrbanGreenSpacesProject) was created on GitHub, where the gitignore file was also added and committed.
@@ -7,12 +8,14 @@ A repository was created(UrbanGreenSpacesProject) was created on GitHub, where t
 Open street map data downloaded from BBBike was then imported into PgAdmin using the osm2pgsql tool.
 
 A new table (green_spaces) was then created and populated with green spaces(parks) data from the osm data downloaded.
+
 `CREATE TABLE green_spaces (
 id SERIAL PRIMARY KEY,
 name VARCHAR(255),
 location GEOMETRY(Polygon, 3857),
 area_sq_m NUMERIC
 );`
+
 
 `INSERT INTO green_spaces (name, location, area_sq_m)
 SELECT name, ST_Centroid(way), ST_Area(way)
@@ -26,11 +29,14 @@ WHERE name IS NULL;`
 
 
 ANALYSIS
+
 The number of parks, and total area of green space were obtained by:
+
 `SELECT COUNT(*) AS total_parks, 
 ROUND((SUM(area_sq_m)), 2) AS total_area_sq_m
 FROM green_spaces
 WHERE name <> 'Washington';`
+
 
 
 ![image](https://github.com/isackwalube/UrbanGreenSpacesProject/assets/156945477/270b4d46-4b9e-41f4-9337-9f762d4899dd)
