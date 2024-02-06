@@ -37,9 +37,9 @@ WHERE name IS NULL;`
 
 The cleaned data was added to QGIS for visualization purposes.
 
-ANALYSIS
+ANALYSIS and FINDINGS
 
-The number of parks, and total area of green space were obtained by:
+The number of parks and total area of green space were obtained by:
 
 `SELECT COUNT(*) AS total_parks, 
 ROUND((SUM(area_sq_m)), 2) AS total_area_sq_m
@@ -49,6 +49,12 @@ WHERE name <> 'Washington';`
 
 
 ![image](https://github.com/isackwalube/UrbanGreenSpacesProject/assets/156945477/270b4d46-4b9e-41f4-9337-9f762d4899dd)
+
+visually, the parks tally with the green spaces on the map.
+
+Conclusion:
+
+To my opinion, if polygon data instead of point data was inserted in the newly created tables(green_spaces), it would better serve visual analysis on the map as far as size and coverage context are concerned.
 
 
 
