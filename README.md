@@ -1,7 +1,9 @@
 # UrbanGreenSpacesProject
 METHODOLOGY
 A new database(Urban_green_spaces) was created on PgAdmin.
+
 A repository was created(UrbanGreenSpacesProject) was created on GitHub, where the gitignore file was also added and committed.
+
 Open street map data downloaded from BBBike was then imported into PgAdmin using the osm2pgsql tool.
 
 A new table (green_spaces) was then created and populated with green spaces(parks) data from the osm data downloaded.
@@ -17,9 +19,11 @@ SELECT name, ST_Centroid(way), ST_Area(way)
 FROM planet_osm_polygon
 WHERE leisure = 'park'`
 
+
 The parks without names(null) were deleted using 
 `DELETE FROM green_spaces
 WHERE name IS NULL;`
+
 
 ANALYSIS
 The number of parks, and total area of green space were obtained by:
