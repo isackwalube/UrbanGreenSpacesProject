@@ -1,4 +1,12 @@
 # UrbanGreenSpacesProject
+OBJECTIVES:
+
+1. To find out the number of parks in Washington DC
+
+2. To find out the total green space area in Washington DC
+
+
+
 METHODOLOGY
 
 A new database(Urban_green_spaces) was created on PgAdmin.
@@ -26,6 +34,7 @@ WHERE leisure = 'park'`
 The parks without names(null) were deleted using 
 `DELETE FROM green_spaces
 WHERE name IS NULL;`
+
 
 
 ANALYSIS
