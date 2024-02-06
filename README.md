@@ -11,7 +11,7 @@ METHODOLOGY
 
 A new database(Urban_green_spaces) was created on PgAdmin.
 
-A repository was created(UrbanGreenSpacesProject) was created on GitHub, where the gitignore file was also added and committed.
+A repository was created(UrbanGreenSpacesProject) was created on GitHub, where the assignment files will be added and committed through git bash.
 
 Open street map data downloaded from BBBike was then imported into PgAdmin using the osm2pgsql tool in Command Prompt.
 
