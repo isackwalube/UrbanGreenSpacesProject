@@ -13,7 +13,7 @@ A new database(Urban_green_spaces) was created on PgAdmin.
 
 A repository was created(UrbanGreenSpacesProject) was created on GitHub, where the gitignore file was also added and committed.
 
-Open street map data downloaded from BBBike was then imported into PgAdmin using the osm2pgsql tool.
+Open street map data downloaded from BBBike was then imported into PgAdmin using the osm2pgsql tool in Command Prompt.
 
 A new table (green_spaces) was then created and populated with green spaces(parks) data from the osm data downloaded.
 
