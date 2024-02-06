@@ -37,6 +37,7 @@ WHERE name IS NULL;`
 
 The cleaned data was added to QGIS for visualization purposes.
 
+
 ANALYSIS and FINDINGS
 
 The number of parks and total area of green space were obtained by:
